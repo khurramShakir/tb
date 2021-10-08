@@ -26,4 +26,3 @@ create table user_bucket (id bigint not null, active boolean, cost integer, name
 alter table user add constraint UK_ob8kqyqqgmefl0aco34akdtpe unique (email)
 alter table activity add constraint FKnn72yg7x0l941vua69s6f9cq8 foreign key (user_bucket_id) references user_bucket
 alter table user_bucket add constraint FKa683hles4n8797hvcfhcj0c9t foreign key (user_id) references user
-select * from user_bucket
